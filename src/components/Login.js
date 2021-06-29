@@ -1,12 +1,15 @@
 import React from "react";
 import styled from "styled-components";
+import { Link } from "react-router-dom";
 
 function Login() {
   return (
     <Container>
       <CTA>
         <CTALogoOne src="/images/cta-logo-one.svg" />
-        <SignUp>GET ALL HERE</SignUp>
+
+        <SignUp href="/LoginForm">GET ALL HERE</SignUp>
+
         <Description>
           Disney+ is an American subscription video on-demand over-the-top
           streaming service owned and operated by the Media and Entertainment
@@ -22,9 +25,9 @@ export default Login;
 
 const Container = styled.div`
   position: relative;
-  height: calc(100vh - 70px);
+  height: 100vh;
   display: flex;
-  align-items: top;
+  align-items: center;
   justify-content: center;
 
   &:before {
@@ -49,7 +52,7 @@ const CTA = styled.div`
   width: 90%;
   display: flex;
   flex-direction: column;
-  margin-top: 100;
+  //   margin-top: 100;
   align-items: center;
 `;
 
@@ -68,6 +71,7 @@ const SignUp = styled.a`
   letter-spacing: 1.5px;
   margin-top: 8px;
   margin-bottom: 12px;
+  text-decoration: none;
 
   &:hover {
     background: #0483ee;

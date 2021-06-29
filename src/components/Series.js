@@ -1,7 +1,7 @@
 import React from "react";
 import styled from "styled-components";
 
-function Movies() {
+function Series() {
   return (
     <Container>
       <h4>Recommended for You</h4>
@@ -38,7 +38,7 @@ function Movies() {
   );
 }
 //i1.wp.com/www.piratesandprincesses.net/wp-content/uploads/2020/04/walt-disney-studios.png?fit=1024%2C575&ssl=1
-export default Movies;
+export default Series;
 
 const Container = styled.div`
   min-height: calc(100vh - 70px);
